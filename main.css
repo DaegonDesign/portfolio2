@@ -1,0 +1,214 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.hblink {
+  text-decoration: none;
+  color: #8b8c8f;
+  transition: color 0.5s;
+  line-height: 5vw;
+}
+.hblink:hover {
+  color: #b3b3b5;
+}
+
+#homepagebackground {
+  width: 100%;
+  margin-bottom: -4px;
+  border: 0;
+  position: relative;
+}
+
+body {
+  background-color: #181818;
+  margin: 0;
+  padding: 0;
+}
+
+#banneri,
+#bannerd,
+#bannerk {
+  font-family: "Teko", sans-serif;
+  font-size: 2vw;
+  letter-spacing: 0.1vw;
+  text-align: center;
+  background-image: url("img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #212121;
+  color: #ababab;
+  padding: 0.6%;
+  margin: 0;
+  border: 0;
+  border: none !important;
+}
+#bannerd {
+  background-image: url("img/bannerd.jpg");
+}
+
+#homepagebannerlinks {
+  float: left;
+  z-index: 1;
+  top: 34vw;
+  font-family: "Teko", sans-serif;
+  padding-left: 5.35%;
+  font-size: 2vw;
+  position: absolute;
+}
+
+#dots {
+  float: left;
+  z-index: 1;
+  top: 34vw;
+  padding-left: 3.35%;
+  font-size: 1vw;
+  position: absolute;
+  color: #c4c5c5;
+}
+.dot {
+  text-decoration: none;
+  color: #8b8c8f;
+  line-height: 5vw;
+  pointer-events: none;
+}
+
+#gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#imglink {
+  width: 100%;
+  height: 100%;
+}
+.galleryhorizontal {
+  width: 50%;
+  transition: opacity 0.8s;
+}
+
+.galleryvertical {
+  width: 25%;
+  transition: opacity 0.8s;
+}
+.gallerythumbnail {
+  width: 100%;
+  transition: opacity 0.8s;
+}
+.galleryhorizontal:hover {
+  opacity: 50%;
+}
+.galleryvertical:hover {
+  opacity: 50%;
+}
+.gallerythumbnail:hover {
+  opacity: 50%;
+}
+
+#more,
+#moredes {
+  display: none;
+}
+
+#show,
+#showdes {
+  width: 100%;
+  font-family: "Teko", sans-serif;
+  font-size: 2vw;
+  padding: 1vw;
+  outline: none;
+  border: none;
+  margin: 0;
+  color: #ababab;
+  background-color: #212121;
+  opacity: 50%;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+#show:hover,
+#showdes:hover {
+  opacity: 100%;
+}
+
+a {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#projects {
+  width: 100%;
+  font-family: "Teko", sans-serif;
+  font-size: 2vw;
+  padding: 1vw;
+  outline: none;
+  margin: 0;
+  color: #ababab;
+  background-color: #212121;
+  opacity: 50%;
+  transition: opacity 0.5s;
+  border: none;
+  cursor: pointer;
+}
+#projects:hover {
+  opacity: 100%;
+}
+
+.thumb_img_list {
+  margin-top: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  margin: 2vw;
+  transition: 0.5s ease;
+  border: none;
+}
+
+#thumb1,
+#thumb2,
+#thumb3 {
+  width: 100%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+#mainImg2,
+#mainImg3 {
+  display: none;
+}
+
+.imgbox img {
+  width: 60%;
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+@media screen and (orientation: portrait) {
+  .imgbox img {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .card {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .card {
+    width: 25%;
+  }
+}

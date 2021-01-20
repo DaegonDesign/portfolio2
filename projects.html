@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Projects</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <a href="index.html">
+        <button type="button" id="projects">HOME</button>
+    </a>
+
+<div class="thumb_img_list">
+
+    <div class="card">
+        <img src="img/edf.jpg" id="thumb1" alt="edf">
+    </div>
+    <div class="card">
+        <img src="img/hotel.jpg" id="thumb2" alt="hotel">
+    </div>
+    <div class="card">
+        <img src="img/powergrove.jpg" id="thumb3" alt="pwg">
+    </div>
+</div>
+
+<div class="imgbox">
+    <figure>
+    <img src="img/projects/edf.jpg" id="mainImg">
+    <img src="img/projects/hotel.jpg" id="mainImg2">
+    <img src="img/projects/powergrove.jpg" id="mainImg3">
+</figure>
+
+<script>
+    mainImg = document.getElementById('mainImg');
+
+thumb1 = document.getElementById('thumb1');
+thumb1Src = document.getElementById('mainImg').src;
+thumb2 = document.getElementById('thumb2');
+thumb2Src = document.getElementById('mainImg2').src;
+thumb3 = document.getElementById('thumb3');
+thumb3Src = document.getElementById('mainImg3').src;
+
+thumb1.addEventListener("click",function(){
+    mainImg.src=thumb1Src
+})
+thumb2.addEventListener("click",function(){
+    mainImg.src=thumb2Src
+})
+thumb3.addEventListener("click",function(){
+    mainImg.src=thumb3Src
+})
+</script>
+
+</div>
+
+ 
+
+
+</body>
+</html>

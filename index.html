@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="lightbox.min.css"/>
+<link rel="stylesheet" href="main.css"/>
+<script defer src="script.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<img src="img/bckmain.jpg" id="homepagebackground">
+
+<div id="homepagebannerlinks">
+    <a href="#banneri" class="hblink">ILLUSTRATION</a>
+    <br>  
+    <a href="#bannerd" class="hblink">DESIGN</a>
+    <br>  
+    <a href="#bannerk" class="hblink">KRAKENFALL</a>
+</div>
+<div id="dots">
+    <a href="#banneri" class="dot">&#9670;</a>
+    <br>  
+    <a href="#bannerd" class="dot">&#9670;</a>
+    <br>  
+    <a href="#bannerk" class="dot">&#9670;</a>
+</div>
+
+<!--BANNER ONE START-->
+<div id="banneri">
+    <h1>ILLUSTRATION</h1>
+</div>
+<div id="gallery">
+<a href="img/gallery/ill7.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/ill7.jpg" id="imglink" alt="ill7"></a>
+<a href="img/gallery/ill6.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/ill6.jpg" id="imglink" alt="ill6"></a>
+</div>
+<span id="more">
+<div id="gallery">
+<a href="img/gallery/ill5.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/ill5.jpg" id="imglink" alt="ill5"></a>
+<a href="img/gallery/ill2.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/ill2.jpg" id="imglink" alt="ill2"></a>
+<a href="img/gallery/ill1.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/ill1.jpg" id="imglink" alt="ill1"></a>
+<a href="img/gallery/ill8.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/ill8.jpg" id="imglink" alt="ill8"></a>
+<a href="img/gallery/ill3.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/ill3.jpg" id="imglink" alt="ill3"></a>
+<a href="img/gallery/ill4.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/ill4.jpg" id="imglink" alt="ill4"></a>
+<a href="img/gallery/ill11.jpg" class="galleryvertical" data-lightbox="photos"><img src="img/icons/ill11.jpg" id="imglink" alt="ill11"></a>
+<a href="img/gallery/ill10.jpg" class="galleryvertical" data-lightbox="photos"><img src="img/icons/ill10.jpg" id="imglink" alt="ill10"></a>
+<a href="img/gallery/ill14.jpg" class="galleryvertical" data-lightbox="photos"><img src="img/icons/ill14.jpg" id="imglink" alt="ill14"></a>
+<a href="img/gallery/ill9.jpg" class="galleryvertical" data-lightbox="photos"><img src="img/icons/ill9.jpg" id="imglink" alt="ill9"></a>
+<a href="img/gallery/ill13.jpg" class="galleryvertical" data-lightbox="photos"><img src="img/icons/ill13.jpg" id="imglink" alt="ill13"></a>
+<a href="img/gallery/ill12.jpg" class="galleryvertical" data-lightbox="photos"><img src="img/icons/ill12.jpg" id="imglink" alt="ill12"></a>
+</div>
+</span>
+<button type="button" id="show" onclick="show()">Show More</button>
+<script type="text/javascript">
+var i=0;
+    function show(){
+        if(!i){
+            document.getElementById("more").style.
+                display ="inline";
+            document.getElementById("show").innerHTML="Show Less";
+            i=1;
+        }
+        else{
+            document.getElementById("more").style.
+                display ="none";
+            document.getElementById("show").innerHTML="Show More";
+            i=0;
+        }
+    }
+</script>
+<!--BANNER ONE END-->
+
+<!--BANNER TWO START-->
+<div id="bannerd">
+    <h1>DESIGN</h1>
+</div>
+<div id="gallery">
+    <a href="img/gallery/des10.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/des10.jpg" id="imglink" alt="des10"></a>
+    <a href="img/gallery/des8.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/des8.jpg" id="imglink" alt="des8"></a>
+</div>
+<span id="moredes">
+<div id="gallery">
+    <a href="img/gallery/des4.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/des4.jpg" id="imglink" alt="des4"></a>
+    <a href="img/gallery/des9.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/des9.jpg" id="imglink" alt="des9"></a>
+    <a href="img/gallery/des1.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/des1.jpg" id="imglink" alt="des1"></a>
+    <a href="img/gallery/des5.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/des5.jpg" id="imglink" alt="des5"></a>
+    <a href="img/gallery/des3.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/des3.jpg" id="imglink" alt="des3"></a>
+    <a href="img/gallery/des7.jpg" class="galleryhorizontal" data-lightbox="photos"><img src="img/icons/des7.jpg" id="imglink" alt="des7"></a>
+    <a href="img/gallery/des11.jpg" class="galleryvertical" data-lightbox="photos"><img src="img/icons/des11.jpg" id="imglink" alt="des11"></a>
+    <a href="img/gallery/des12.jpg" class="galleryvertical" data-lightbox="photos"><img src="img/icons/des12.jpg" id="imglink" alt="des12"></a>
+    </div>
+</span>
+<button type="button" id="showdes" onclick="showdes()">Show More</button>
+<script type="text/javascript">
+var d=0;
+    function showdes(){
+        if(!d){
+            document.getElementById("moredes").style.
+                display ="inline";
+            document.getElementById("showdes").innerHTML="Show Less";
+            d=1;
+        }
+        else{
+            document.getElementById("moredes").style.
+                display ="none";
+            document.getElementById("showdes").innerHTML="Show More";
+            d=0;
+        }
+    }
+</script>
+<a href="projects.html" target="_blank">
+    <button type="button" id="projects">See Larger Projects</button>
+</a>
+<!--BANNER TWO END-->
+
+<!--BANNER THREE START-->
+<div id="bannerk">
+    <h1>KRAKENFALL</h1>
+</div>
+<div id="gallery">
+    <a href="https://gumroad.com/l/mKNRr" class="gallerythumbnail" target="_blank"><img src="img/icons/krakenfall.jpg" id="imglink" alt="des12"></a>
+</div>
+<!--BANNER THREE END-->
+
+
+</body>
+
+
+</html>
