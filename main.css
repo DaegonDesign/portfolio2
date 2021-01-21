@@ -49,7 +49,7 @@ body {
 
 #contact_icon {
   width: 2vw;
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   top: 2vw;
   right: 1.5vw;
@@ -247,7 +247,7 @@ a {
     width: 25%;
   }
   #contact_icon {
-    width: 4vw;
+    width: 3vw;
   }
   #contact_info {
     font-size: 2vw;
@@ -340,6 +340,6 @@ a {
   background-color: #181818;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 9999;
   overflow: hidden;
 }
