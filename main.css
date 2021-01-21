@@ -274,7 +274,7 @@ a {
 
 .loader-wrapper {
   width: 100%;
-  height: fit-content;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -283,4 +283,5 @@ a {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  overflow: hidden;
 }
