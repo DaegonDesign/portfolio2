@@ -7,8 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Amethysta&family=Eczar:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="main.css"/>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 </head>
 
 <body class="krakenfallbackgroundcolor">
@@ -35,51 +34,258 @@
     </div>
     
     <div class="maintext">
-    <p>Dark, raging waves shatter across the bow of an old galleon as it approaches the rocky shoals of the
+    <p id="quote">"Dark, raging waves shatter across the bow of an old galleon as it approaches the rocky shoals of the
 pirate port. Its wooden hull covered in algae and barnacles; its sails torn and tattered by the merciless winds; 
 its ropes and boards creaking from their strains; its men worn and wounded, beaten and broken by the very life they chose...
 <br>Yet, the ship stays afloat. The hull leaks not a single drop. The wind still strikes the tattered sails. 
 The boards and ropes still hold... And the men sail on, drinking, laughing and enjoying their free life until the day 
-they meet their horrible demise in the murky waters of Krakenfall...
+they meet their horrible demise in the murky waters of Krakenfall..."
 </p>
-</div>
-
-<div class="deco2container">
-    <img src="img/deco2.png" alt="deco2" id="deco2">
 </div>
 
 <p class="maintext">Krakenfall is a large island made up of steep cliffsides and razor-sharp rocks, an unfriendly 
     environment populated by the worst of the worst. Located in the middle of the Arcadian Ocean, the port is 
-    surrounded by numerous islands ready to be explored, wonderous beasts to be slaughtered and wealthy
+    surrounded by numerous islands ready to be explored, terrible beasts to be slaughtered and wealthy
     merchants to be raided in the pursuit of wealth and glory.</p>
 
 
-<div class="krakenfallrest">
+<div class="dreadcrews"><!--DREAD CREW CLASS BEGINS-->
 
+<!--chapter title-->
 <div class="dualdeco1">
 <img src="img/dualdeco1.png" alt="dualdeco1" id="deco1">
 </div>
-
 <div class="textcontainer">
 <h3 class="halftitle">THE DREAD CREWS</h3>
 </div>
+<!--chapter title-->
+<br>
+<p class="maintext">Though there are hundreds of criminal gangs roaming the bloodsoaked
+    beaches of Krakenfall, the port is ultimately ruled over by the six Dread Crews - massive
+    gangs of pirates, each one with their own goals, ideals and a fleet of ships commanded by a
+    powerful leader known as a Dread Lord.
+</p>
 
+
+<div id="banners">
+    <img src="img/krk/banners/gsr.png" alt="gsr" id="gsr">
+    <img src="img/krk/banners/ato.png" alt="ato" id="ato">
+    <img src="img/krk/banners/sdb.png" alt="sdb" id="sdb">
+    <img src="img/krk/banners/sbb.png" alt="sbb" id="sbb">
+    <img src="img/krk/banners/kfb.png" alt="kfb" id="kfb">
+    <img src="img/krk/banners/dml.png" alt="dml" id="dml">
 </div>
-<div id="slider">
-   
-    <img src="/img/krk/banners/gsr.jpg" alt="gsr" id="bannerGSR">
-    <img src="/img/krk/banners/ato.jpg" alt="ato" id="bannerATO">
-    <img src="/img/krk/banners/sdb.jpg" alt="sdb" id="bannerSDB">
-    <img src="/img/krk/banners/sbb.jpg" alt="sbb" id="bannerSBB">
-    <img src="/img/krk/banners/kfb.jpg" alt="kfb" id="bannerKFB">
-    <img src="/img/krk/banners/dml.jpg" alt="dml" id="bannerDML">
 
+<div class="dreaddesc">
+    <div class="onetwothreecrews">
+        <div id="GSRdot">&#9670;</div>
+        <h1 class="boldtitle1">Golden Storm Raiders</h1>
+        <p class="crewtext">The most powerful of all the crews, their success comes 
+            entirely from their complete lack of morality and care for anyone other 
+            than themselves 
+            <span id="readmoredots1">...</span><span id="crewtextmore1">
+            . The Golden dogs don’t just raid merchant ships, they kill, 
+            torture and devastate their target, leaving behind a horrifying nightmare 
+            for the few survivors that are left to tell their story. They take no prisoners, 
+            don’t accept surrender and leave behind a trail of blood so vile and despicable 
+            it haunts the nightmares of even the sturdiest sailors.</span>  </p>
+            <button type="button" id="myBtn1" onclick="myFunction1()">Read more</button>
+            <br>
+            <div id="ATOdot">&#9670;</div>
+        <h1 class="boldtitle2">The Arc-Tech Order</h1>
+        <p class="crewtext">The Order takes pride in their discipline, honor and morality, even
+             as pirates. Most of the sailors that join the Order are either there to take 
+             <span id="readmoredots2">...</span><span id="crewtextmore2">
+             revenge on the Imperial navy that wronged them or to continue their research, 
+             uninterrupted by zealous fanatics that so often deem it heretical. Some call 
+             them mad scientists due to their disregard for the consequences their technology 
+             bares on the world, but the Order is convinced that their 
+             research helps drive humanity forward from an unending age of technological 
+             stagnation.</span></p>
+             <button type="button" id="myBtn2" onclick="myFunction2()">Read more</button>
+
+            <br>
+            <div id="TSBdot">&#9670;</div>
+        <h1 class="boldtitle3">The Slaughterdock Butchers</h1>
+        <p class="crewtext">One of the most favored crews on Krakenfall, the 
+            Butchers are as friendly and social as they are skilled and dedicated to their work. 
+            Rarely resorting
+            <span id="readmoredots3">...</span><span id="crewtextmore3">
+            to theft, they take great pride in “the hunt” and decorate both 
+            their ships and their clothes with trophies from the monsters they’ve slain. 
+            When they’re not out on the ocean hunting the many horrors that stalk Arcadia, 
+            they can be found in taverns, eating, drinking and having fun to the sounds 
+            of loud music and cheering.</span></p>
+            <button type="button" id="myBtn3" onclick="myFunction3()">Read more</button>
+
+    </div>
+    <div class="fourfivesixcrews">
+        <div id="SBBdot">&#9670;</div>
+        <h1 class="boldtitle4">The Spellborn Bastards</h1>
+        <p class="crewtext">Much like all the other crews, the Spellborn Bastards started off as a 
+            band of brigands, robbing and pillaging. Their motivation, however, was 
+            <span id="readmoredots4">...</span><span id="crewtextmore4">
+            drastically different. After witnessing the Eastern Empires misuse, abuse or melt down 
+            powerful magic items they would deem heretical, the Spellborn made it their task to hunt 
+            down and steal any magical artifact they can find,
+            with the purpose of protecting them from destruction and misuse.
+             <br></br></span></p>
+             <button type="button" id="myBtn4" onclick="myFunction4()">Read more</button>         
+            
+            <br>
+            <div id="TKBdot">&#9670;</div>
+        <h1 class="boldtitle5">The Krakenfall Blackguard</h1>
+        <p class="crewtext">To get a bunch of bloodthirsty savages and criminals 
+            in line, it takes a lot more than a stern look and a set 
+            of laws. Those in charge of punishment and
+            <span id="readmoredots5">...</span><span id="crewtextmore5">
+            debt collection have to be more than 
+            just human, their very presence has to terrify even the most stalwart and fearless 
+            of pirates. 
+            The Blackguard aren’t just human, they’re tethered souls, undead 
+            entities bound to the will of the Ferryman, immortal specters cursed for all 
+            eternity to punish the backstabbers and mutineers of Krakenfall, just as they
+        were once punished for those very crimes. </span></p>
+        <button type="button" id="myBtn5" onclick="myFunction5()">Read more</button>
+
+                <br>
+                <div id="TDLdot">&#9670;</div>
+        <h1 class="boldtitle6">The Damned Legion</h1>
+        <p class="crewtext">The remnants of what use to be Krakenfall’s most 
+            notorious crew, the spawn of Hannibal, cut down to only a few dozen after the Great 
+            mutiny, the 
+            <span id="readmoredots6">...</span><span id="crewtextmore6">
+            Damned Legion is a guild of vampires, liches, ghosts, necromancers, and 
+            wraiths; the world’s undead elite. A crew of death, and the first-ever Dread Crew, 
+            they use to number in thousands, but are now confined to their dark cathedral with 
+            only a handful of leaders, each with a few dozen minions at their side.</span></p>
+            <button type="button" id="myBtn6" onclick="myFunction6()">Read more</button>
+
+    </div>
 </div>
 
+</div> <!--DREAD CREW CLASS END-->
+
 <br></br>
 <br></br>
 <br></br>
 <br></br>
 
+<!--chapter title-->
+<div class="dualdeco1">
+    <img src="img/dualdeco1.png" alt="dualdeco1" id="deco1">
+    </div>
+    <div class="textcontainer">
+    <h3 class="halftitle">THE DREAD CREWS</h3>
+    </div>
+<!--chapter title-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function myFunction1() {
+  var readmoredots = document.getElementById("readmoredots1");
+  var moreText = document.getElementById("crewtextmore1");
+  var btnText = document.getElementById("myBtn1");
+
+  if (readmoredots.style.display === "none") {
+    readmoredots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    readmoredots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+function myFunction2() {
+  var readmoredots = document.getElementById("readmoredots2");
+  var moreText = document.getElementById("crewtextmore2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (readmoredots.style.display === "none") {
+    readmoredots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    readmoredots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+function myFunction3() {
+  var readmoredots = document.getElementById("readmoredots3");
+  var moreText = document.getElementById("crewtextmore3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (readmoredots.style.display === "none") {
+    readmoredots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    readmoredots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+function myFunction4() {
+  var readmoredots = document.getElementById("readmoredots4");
+  var moreText = document.getElementById("crewtextmore4");
+  var btnText = document.getElementById("myBtn4");
+
+  if (readmoredots.style.display === "none") {
+    readmoredots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    readmoredots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+function myFunction5() {
+  var readmoredots = document.getElementById("readmoredots5");
+  var moreText = document.getElementById("crewtextmore5");
+  var btnText = document.getElementById("myBtn5");
+
+  if (readmoredots.style.display === "none") {
+    readmoredots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    readmoredots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+function myFunction6() {
+  var readmoredots = document.getElementById("readmoredots6");
+  var moreText = document.getElementById("crewtextmore6");
+  var btnText = document.getElementById("myBtn6");
+
+  if (readmoredots.style.display === "none") {
+    readmoredots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    readmoredots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
 </body>
 </html>
