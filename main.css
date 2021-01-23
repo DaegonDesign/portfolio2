@@ -361,16 +361,17 @@ a {
 .krakenfallbackgroundcolor {
   background-color: #080808;
 }
-.thumbnailcontainer {
-  height: 70vh;
-  object-fit: cover;
-  position: relative;
-}
-#krkthumbnail {
-  height: 100%;
 
+.thumbnailcontainer {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
   overflow: hidden;
 }
+.thumbnailcontainer img {
+  height: 100%;
+}
+
 .maintitle {
   margin-top: -2vh;
   margin-bottom: 0;
@@ -397,6 +398,7 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 6vh;
+  overflow: hidden;
 }
 #decoM {
   height: 100%;
@@ -406,6 +408,7 @@ a {
   height: 60px;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 #deco1 {
   height: 100%;
@@ -435,6 +438,7 @@ a {
   justify-content: center;
   width: 80%;
   margin: auto;
+  overflow: hidden;
 }
 
 #slider img {
