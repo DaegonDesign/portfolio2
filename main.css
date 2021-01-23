@@ -514,7 +514,7 @@ a {
   color: #675c10;
 }
 .boldtitle1:hover {
-  color: #675c10;
+  color: #746b33;
 }
 #ATOdot {
   color: #374e84;
@@ -572,6 +572,54 @@ a {
   color: #3a3629;
   cursor: pointer;
   outline: none;
+}
+
+.webcomiccontainer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5vh;
+  transition: all 0.5s;
+  opacity: 80%;
+}
+.webcomiccontainer:hover {
+  opacity: 100%;
+}
+#webcomic {
+  width: 100%;
+}
+.mapcontainer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 3vh;
+}
+#mapimg {
+  width: 100%;
+}
+.linebehind,
+.linebehind2 {
+  background: rgb(107, 94, 50);
+  background: linear-gradient(
+    90deg,
+    rgba(107, 94, 50, 0) 0%,
+    rgba(107, 94, 50, 1) 15%,
+    rgba(107, 94, 50, 1) 85%,
+    rgba(107, 94, 50, 0) 100%
+  );
+  width: 100%;
+  height: 2px;
+  margin: auto;
+}
+.linebehind {
+  margin-top: -38vw;
+}
+.linebehind2 {
+  margin-top: 34vw;
+}
+.mapchapter {
 }
 
 @media screen and (orientation: portrait) {
