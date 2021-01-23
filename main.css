@@ -343,3 +343,103 @@ a {
   z-index: 9999;
   overflow: hidden;
 }
+
+/* KRAKENFALL PAGE CSS --------------------------------------------------------- */
+:root {
+  --text-color: #908769;
+  --gradient: -webkit-linear-gradient(#7b6c39, #3c2f14);
+}
+.kraknav {
+  display: none;
+}
+.krakenfallbody {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.krakenfallbackgroundcolor {
+  background-color: #080808;
+}
+.thumbnailcontainer {
+  height: 70vh;
+  object-fit: cover;
+  position: relative;
+}
+#krkthumbnail {
+  height: 100%;
+
+  overflow: hidden;
+}
+.maintitle {
+  margin-top: -2vh;
+  margin-bottom: 0;
+  font-size: 10vh;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Eczar", serif;
+  font-weight: 600;
+}
+.maintext {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Amethysta", serif;
+  text-align: justify;
+  color: var(--text-color);
+  font-size: 14px;
+  padding-bottom: 4vh;
+  width: 40%;
+}
+
+.decocontainerM {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6vh;
+}
+#decoM {
+  height: 100%;
+}
+
+.dualdeco1 {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+#deco1 {
+  height: 100%;
+}
+.deco2container {
+  height: 1.5vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6vh;
+}
+#deco2 {
+  height: 100%;
+}
+
+.halftitle {
+  text-align: center;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Eczar", serif;
+  font-weight: 600;
+  margin-top: -47px;
+}
+
+#slider {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+#slider img {
+  width: 150px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0;
+}
