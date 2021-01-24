@@ -646,7 +646,95 @@ a {
 .mapchapter {
 }
 
+.emptybox {
+  opacity: 0%;
+}
+
+.centeredtext {
+  text-align-last: center;
+}
+.centeredtext .maintext {
+  opacity: 50%;
+}
+.shipmat {
+  width: 60%;
+  margin: auto;
+}
+.shipstext {
+  padding-top: 50px;
+}
+.alignleft {
+  display: flex;
+  height: 250px;
+}
+.alignleft p,
+.alignleft h1 {
+  float: left;
+  text-align: left;
+  width: 50%;
+  padding-left: 2vw;
+  margin: 0;
+}
+.alignleft img {
+  width: auto;
+  height: 100%;
+}
+
+.alignright {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  height: 250px;
+}
+.alignright p,
+.alignright h1 {
+  float: right;
+  text-align: right;
+  width: 50%;
+  padding-right: 2vw;
+  margin: 0;
+}
+.alignright img {
+  width: auto;
+  height: 100%;
+}
+
 @media screen and (orientation: portrait) {
+  h1 {
+    line-height: 24px;
+  }
+  .alignleft {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+  .alignleft p,
+  .alignleft h1 {
+    padding-top: 20px;
+    float: none;
+    text-align: center;
+    margin: auto;
+  }
+  .alignleft img {
+    width: 80%;
+    height: auto;
+  }
+  .alignright {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+  .alignright p,
+  .alignright h1 {
+    padding-top: 20px;
+    float: none;
+    text-align: center;
+    margin: auto;
+  }
+  .alignright img {
+    width: 80%;
+    height: auto;
+  }
   .onetwothreecrews,
   .fourfivesixcrews {
     width: 100%;
@@ -662,5 +750,8 @@ a {
   #TKBdot,
   #TDLdot {
     padding-top: 30px;
+  }
+  .emptybox {
+    display: none;
   }
 }
