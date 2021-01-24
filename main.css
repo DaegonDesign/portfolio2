@@ -574,21 +574,45 @@ a {
   outline: none;
 }
 
-.webcomiccontainer {
-  width: 60%;
+.webcomics {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   margin: auto;
-  margin-top: 5vh;
-  transition: all 0.5s;
-  opacity: 80%;
 }
-.webcomiccontainer:hover {
-  opacity: 100%;
+.webcomics .crewtext {
+  opacity: 50%;
 }
+.webcomiccontainer {
+  width: 300px; /* THIS LINE CHANGES THE SIZE OF COMIC BOOK CARDS*/
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  margin: 0;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 3vw;
+  position: relative;
+}
+
 #webcomic {
   width: 100%;
+  display: block;
+  position: relative;
 }
+#webcomicdata {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  opacity: 0%;
+  transition: all 0.3s;
+}
+.webcomiccontainer:hover #webcomicdata {
+  opacity: 100%;
+}
+
 .mapcontainer {
   width: 80%;
   display: flex;
