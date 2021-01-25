@@ -702,11 +702,68 @@ a {
   display: none;
 }
 
+/*BESTIARY SLIDER*/
+
+.bestcontainer {
+  width: 90%;
+  margin: auto;
+}
+.bestiary {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  overflow-x: scroll;
+}
+.bestcard {
+  width: auto;
+  height: 44vw;
+  margin-right: 20px;
+}
+.bestcard img {
+  height: 95%;
+}
+
+::-webkit-scrollbar {
+  background: #141414;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(82, 72, 38);
+  background: linear-gradient(
+    180deg,
+    rgba(82, 72, 38, 0) 35%,
+    rgba(82, 72, 38, 1) 35%,
+    rgba(82, 72, 38, 1) 65%,
+    rgba(82, 72, 38, 0) 65%
+  );
+}
+::-webkit-scrollbar-thumb:vertical {
+  background: rgb(82, 72, 38);
+  background: linear-gradient(
+    90deg,
+    rgba(82, 72, 38, 0) 35%,
+    rgba(82, 72, 38, 1) 35%,
+    rgba(82, 72, 38, 1) 65%,
+    rgba(82, 72, 38, 0) 65%
+  );
+}
+/*BESTIARY SLIDER END*/
+
 /*KRAKENFALL PAGE RESPONSIVENESS*/
+@media screen and (max-width: 750px) {
+  .bestcard {
+    height: 65vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .bestcard {
+    height: 137vw;
+  }
+}
 @media screen and (orientation: portrait), screen and (max-width: 1366px) {
   h1 {
     line-height: 24px;
   }
+
   .shipmat {
     width: 80%;
     display: block;
