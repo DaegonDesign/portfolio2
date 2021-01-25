@@ -699,42 +699,64 @@ a {
   height: 100%;
 }
 
-@media screen and (orientation: portrait) {
+/*KRAKENFALL PAGE RESPONSIVENESS*/
+@media screen and (orientation: portrait), screen and (max-width: 1366px) {
   h1 {
     line-height: 24px;
   }
+  .shipmat {
+    width: 80%;
+    display: block;
+  }
+
+  .alignleft,
+  .alignright {
+    width: 100%;
+    display: inline-block;
+  }
   .alignleft {
-    flex-wrap: wrap;
     justify-content: center;
     margin: auto;
   }
   .alignleft p,
   .alignleft h1 {
-    padding-top: 20px;
+    width: 100%;
     float: none;
     text-align: center;
     margin: auto;
+    padding-left: 0;
   }
-  .alignleft img {
-    width: 80%;
-    height: auto;
+  .alignleft p {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .alignleft img,
+  .alignright img {
+    width: auto;
+    height: 90%;
+    display: block;
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: -10px;
   }
   .alignright {
-    flex-wrap: wrap;
     justify-content: center;
     margin: auto;
   }
   .alignright p,
   .alignright h1 {
-    padding-top: 20px;
+    width: 100%;
     float: none;
     text-align: center;
     margin: auto;
+    padding-right: 0;
   }
-  .alignright img {
-    width: 80%;
-    height: auto;
+  .alignright p {
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
+
   .onetwothreecrews,
   .fourfivesixcrews {
     width: 100%;
@@ -753,5 +775,23 @@ a {
   }
   .emptybox {
     display: none;
+  }
+  .maintitle {
+    font-size: 6vh;
+  }
+  .maintext {
+    width: 90%;
+  }
+  .centeredtext {
+    text-align-last: left;
+  }
+  .dreaddesc {
+    width: 90%;
+  }
+  .dualdeco1 {
+    height: 55px;
+  }
+  .halftitle {
+    margin-top: -49px;
   }
 }
