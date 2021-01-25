@@ -851,9 +851,23 @@ a {
   }
   .maintext {
     width: 90%;
+    font-size: 12px;
+  }
+  .crewtext {
+    font-size: 12px;
+  }
+  .boldtitle,
+  .boldtitle1,
+  .boldtitle2,
+  .boldtitle3,
+  .boldtitle4,
+  .boldtitle5,
+  .boldtitle6 {
+    font-size: 20px;
   }
   .centeredtext {
     text-align-last: left;
+    font-size: 12px;
   }
   .dreaddesc {
     width: 90%;
