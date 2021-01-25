@@ -698,6 +698,9 @@ a {
   width: auto;
   height: 100%;
 }
+#mobileimage {
+  display: none;
+}
 
 /*KRAKENFALL PAGE RESPONSIVENESS*/
 @media screen and (orientation: portrait), screen and (max-width: 1366px) {
@@ -708,7 +711,15 @@ a {
     width: 80%;
     display: block;
   }
-
+  .shipstext {
+    padding-top: 20px;
+  }
+  #pcimage {
+    display: none;
+  }
+  #mobileimage {
+    display: block;
+  }
   .alignleft,
   .alignright {
     width: 100%;
@@ -739,6 +750,7 @@ a {
     margin: auto;
     margin-top: -10px;
     margin-bottom: -10px;
+    padding-top: 0;
   }
   .alignright {
     justify-content: center;
@@ -751,6 +763,7 @@ a {
     text-align: center;
     margin: auto;
     padding-right: 0;
+    padding-top: 0;
   }
   .alignright p {
     padding-top: 20px;
