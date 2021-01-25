@@ -807,4 +807,7 @@ a {
   .halftitle {
     margin-top: -49px;
   }
+  #banners img {
+    width: 120px;
+  }
 }
