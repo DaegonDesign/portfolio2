@@ -599,12 +599,13 @@ a {
 
 #webcomic {
   width: 100%;
-  display: block;
-  position: relative;
-}
-#webcomicdata {
+
   display: inline-block;
   position: absolute;
+}
+#webcomicdata {
+  display: block;
+  position: relative;
   width: 100%;
   opacity: 0%;
   transition: all 0.3s;
@@ -724,6 +725,29 @@ a {
 }
 
 /*BESTIARY SLIDER END*/
+
+/*WEBCOMIC SLIDER*/
+
+.webcontainer {
+  width: 90%;
+  margin: auto;
+}
+.webcomic {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  overflow-x: scroll;
+}
+.webcard {
+  width: auto;
+  height: 70vw;
+  margin-right: 10px;
+}
+.webcard img {
+  height: 98%;
+}
+
+/*WEBCOMIC SLIDER END*/
 
 /*KRAKENFALL PAGE RESPONSIVENESS*/
 @media screen and (max-width: 750px) {
