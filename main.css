@@ -740,7 +740,7 @@ a {
 }
 .webcard {
   width: auto;
-  height: 70vw;
+  height: 50vw;
   margin-right: 10px;
 }
 .webcard img {
@@ -754,10 +754,16 @@ a {
   .bestcard {
     height: 65vw;
   }
+  .webcard {
+    height: 65vw;
+  }
 }
 @media screen and (max-width: 450px) {
   .bestcard {
     height: 137vw;
+  }
+  .webcard {
+    height: 128vw;
   }
 }
 @media screen and (orientation: portrait), screen and (max-width: 1366px) {
