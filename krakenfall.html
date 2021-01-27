@@ -13,15 +13,42 @@
 </head>
 
 <body class="krakenfallbackgroundcolor">
-  
 
-    <div class="kraknav">
-        <h1>SUP</h1>
+  <div class="loader-wrapper-kra">
+    <span class="loader-kra"><span class="loader-inner-kra"></span></span>
     </div>
-
-
+    <script> 
+    $(window).on("load",function(){
+    $(".loader-wrapper-kra").fadeOut("slow");
+});
+    </script>
+    
 
     <div class="krakenfallbody"><!--START OF KRAKENFALL BODY CLASS-->
+
+      <div class="kraktop">
+        <a href="#"><img src="img/kraktop.png"></a>
+    </div>
+    
+        <div class="kraknav">
+          <p>&#9670;</p>
+            <a href="index.html">Portfolio</a><br>
+            <p>|</p>
+            <a href="#dreadcrews">Dread Crews</a><br>
+            <p>|</p>
+            <a href="#stories">Stories</a><br>
+            <p>|</p>
+            <a href="#mapchapter">Regions</a><br>
+            <p>|</p>
+            <a href="#bestiarychapter">Bestiary</a><br>
+            <p>|</p>
+            <a href="#shipchapter">Ships</a>
+            <p>&#9670;</p>
+        </div>
+    
+
+
+
     <div class="thumbnailcontainer">   
     <img src="img/krk/thumbnail.jpg" alt="thumbnail">
     </div>     
@@ -52,7 +79,7 @@ they meet their horrible demise in the murky waters of Krakenfall..."
     merchants to be raided in the pursuit of wealth and glory.</p>
 
 
-<div class="dreadcrews"><!--DREAD CREW CLASS BEGINS-->
+<div id="dreadcrews"><!--DREAD CREW CLASS BEGINS-->
 
 <!--chapter title-->
 <div class="dualdeco1">
@@ -175,6 +202,7 @@ they meet their horrible demise in the murky waters of Krakenfall..."
 
 <!--COMIC BOOK CLASS START-->
 <!--chapter title-->
+<div id="stories">
 <div class="dualdeco1">
     <img src="img/dualdeco1.png" alt="dualdeco1" id="deco1">
     </div>
@@ -210,11 +238,12 @@ they meet their horrible demise in the murky waters of Krakenfall..."
 <br></br>
 <br></br>
 <br>
+</div>
 <!--COMIC BOOK CLASS END-->
 
 
 <!--MAP CLASS START-->
-<div class="mapchapter">
+<div id="mapchapter">
 <!--chapter title-->
 <div class="dualdeco1">
   <img src="img/dualdeco1.png" alt="dualdeco1" id="deco1">
@@ -269,7 +298,7 @@ they meet their horrible demise in the murky waters of Krakenfall..."
 <!--MAP CLASS END-->
 
 <!--BESTIARY CLASS START-->
-
+<div id="bestiarychapter">
 <!--chapter title-->
 <div class="dualdeco1">
   <img src="img/dualdeco1.png" alt="dualdeco1" id="deco1">
@@ -313,10 +342,11 @@ they meet their horrible demise in the murky waters of Krakenfall..."
 
 <br></br>
 <br></br>
+</div>
 <!--BESTIARY CLASS END-->
 
 <!--SHIP CLASS START-->
-
+<div id="shipchapter">
 <!--chapter title-->
 <div class="dualdeco1">
   <img src="img/dualdeco1.png" alt="dualdeco1" id="deco1">
@@ -415,7 +445,7 @@ can quickly shop for different ship parts, or build an entirely new ship from sc
 <br></br>
 <br></br>
 
-
+</div>
 <!--SHIP CLASS END-->
 
 

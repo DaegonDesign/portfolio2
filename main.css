@@ -47,11 +47,21 @@ body {
   background-image: url("img/bannerd.jpg");
 }
 
+.backtop {
+  position: fixed;
+  z-index: 3;
+  top: 90%;
+  right: 3%;
+  padding: 6px;
+  background: rgb(222, 222, 222, 10%);
+  border-radius: 40%;
+}
+
 #contact_icon {
   width: 2vw;
   z-index: 1;
   position: absolute;
-  top: 2vw;
+  top: 1.5vw;
   right: 1.5vw;
   opacity: 60%;
   transition: all 0.4s;
@@ -75,10 +85,12 @@ body {
 #contact_info a {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  color: #414149;
+  color: #404074;
 }
 #contact_info h1 {
   font-size: 1.2vw;
+  font-family: Arial, Helvetica, sans-serif;
+
   color: #414149;
   font-weight: 1200;
 }
@@ -237,6 +249,9 @@ a {
 }
 
 @media screen and (orientation: portrait) {
+  .backtop {
+    display: none;
+  }
   .imgbox img {
     width: 100%;
     margin-top: 0;
@@ -268,7 +283,8 @@ a {
   }
 }
 
-.loader {
+.loader,
+.loader-kra {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -279,7 +295,8 @@ a {
   animation: loader 2s infinite ease;
 }
 
-.loader-inner {
+.loader-inner,
+.loader-inner-kra {
   vertical-align: top;
   display: inline-block;
   width: 100%;
@@ -331,7 +348,8 @@ a {
   }
 }
 
-.loader-wrapper {
+.loader-wrapper,
+.loader-wrapper-kra {
   width: 100%;
   height: 320%;
   position: absolute;
@@ -349,8 +367,56 @@ a {
   --text-color: #908769;
   --gradient: -webkit-linear-gradient(#7b6c39, #3c2f14);
 }
+.loader-kra {
+  border: 4px solid #908769;
+}
+.loader-wrapper-kra {
+  background-color: #0e0e0e;
+}
+.loader-inner-kra {
+  background-color: #908769;
+}
+
+.kraktop {
+  position: fixed;
+  z-index: 3;
+  top: 90%;
+  right: 2%;
+  padding: 4px;
+  background: rgb(222, 222, 222, 10%);
+  border-radius: 40%;
+}
+
+.kraktop img {
+  width: 2vw;
+  height: auto;
+}
 .kraknav {
-  display: none;
+  width: 100%;
+  box-shadow: 10px 10px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kraknav a {
+  text-decoration: none;
+  color: var(--text-color);
+  opacity: 65%;
+  font-family: "Amethysta", serif;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  padding-bottom: 0.5vw;
+  padding-top: 0.5vw;
+  font-size: 1vw;
+  transition: all 0.4s;
+}
+.kraknav a:hover {
+  color: #f8e4a0;
+}
+.kraknav p {
+  color: var(--text-color);
+  opacity: 65%;
+  font-weight: bolder;
 }
 .krakenfallbody {
   justify-content: center;
@@ -429,7 +495,7 @@ a {
   height: 100%;
 }
 
-.dreadcrews {
+#dreadcrews {
   margin-top: 8vh;
 }
 
@@ -644,8 +710,6 @@ a {
 .linebehind2 {
   margin-top: 34vw;
 }
-.mapchapter {
-}
 
 .emptybox {
   opacity: 0%;
@@ -720,6 +784,7 @@ a {
   height: 44vw;
   margin-right: 20px;
 }
+
 .bestcard img {
   height: 95%;
 }
@@ -750,20 +815,42 @@ a {
 /*WEBCOMIC SLIDER END*/
 
 /*KRAKENFALL PAGE RESPONSIVENESS*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .bestcard {
     height: 65vw;
   }
   .webcard {
     height: 65vw;
+  }
+  .kraktop {
+    right: 46%;
+    top: 95%;
+    background: rgb(222, 222, 222, 15%);
+  }
+  .kraktop img {
+    width: 6vw;
+  }
+  .kraknav a {
+    font-size: 2vw;
   }
 }
 @media screen and (max-width: 450px) {
   .bestcard {
     height: 137vw;
   }
+  .kraknav {
+    display: none;
+  }
   .webcard {
     height: 128vw;
+  }
+  .kraktop {
+    right: 46%;
+    top: 95%;
+    background: rgb(222, 222, 222, 15%);
+  }
+  .kraktop img {
+    width: 6vw;
   }
 }
 @media screen and (orientation: portrait), screen and (max-width: 1366px) {
@@ -771,6 +858,9 @@ a {
     line-height: 24px;
   }
 
+  .kraktop {
+    right: 4%;
+  }
   .shipmat {
     width: 80%;
     display: block;
