@@ -263,6 +263,9 @@ a {
     margin-top: -10px;
     content: " ";
   }
+  #largerprojectsbutton #projects {
+    font-size: 1vw;
+  }
 }
 
 @media screen and (orientation: portrait) {
@@ -440,10 +443,12 @@ a {
   display: flex;
   justify-content: center;
   height: 70vh;
+  width: 100%;
   overflow: hidden;
 }
 .thumbnailcontainer img {
   height: 100%;
+  width: auto;
 }
 
 .maintitle {
@@ -823,6 +828,12 @@ a {
 /*WEBCOMIC SLIDER END*/
 
 /*KRAKENFALL PAGE RESPONSIVENESS*/
+@media screen and (min-width: 3200px) {
+  .thumbnailcontainer {
+    height: 50vh;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .bestcard {
     height: 65vw;
