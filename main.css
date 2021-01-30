@@ -404,7 +404,6 @@ a {
 }
 .kraknav {
   width: 100%;
-  box-shadow: 10px 10px black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -466,6 +465,7 @@ a {
   margin-right: auto;
   font-family: "Amethysta", serif;
   text-align: justify;
+  text-align-last: center;
   color: var(--text-color);
   font-size: 16px;
   padding-bottom: 1vh;
