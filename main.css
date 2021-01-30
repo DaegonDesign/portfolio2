@@ -703,6 +703,23 @@ a {
 #mapimg {
   width: 100%;
 }
+.mockupcontainer {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 1.5vh;
+}
+#mockup {
+  width: 100%;
+}
+.buybutton {
+  padding-top: 2vh;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
 .linebehind,
 .linebehind2 {
   background: rgb(107, 94, 50);
@@ -730,6 +747,7 @@ a {
 
 .centeredtext {
   text-align-last: center;
+  text-align: center;
 }
 .centeredtext .maintext {
   opacity: 50%;
@@ -837,6 +855,9 @@ a {
 @media screen and (max-width: 768px) {
   .bestcard {
     height: 65vw;
+  }
+  .mockupcontainer {
+    width: 60%;
   }
   .webcard {
     height: 65vw;
